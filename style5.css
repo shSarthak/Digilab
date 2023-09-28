@@ -1,0 +1,183 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Apply background image */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 10rem; /* Convert px to rem */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav img {
+    height: 5rem; /* Convert px to rem */
+}
+
+nav .center {
+    margin: 1.5625rem; /* Convert px to rem */
+}
+
+nav .left {
+    margin: 0.625rem; /* Convert px to rem */
+}
+
+nav .home, nav .feature, nav .payment, nav .login, nav .contact {
+    margin-right: 1.5625rem; /* Convert px to rem */
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+nav .login {
+    margin-top: 0.8125rem; /* Convert px to rem */
+    margin-right: 1.5625rem; /* Convert px to rem */
+}
+
+.box3 {
+    height: 3rem; /* Convert px to rem */
+    width:  8rem; /* Convert px to rem */
+    background-color: lightseagreen;
+    border-radius: 0.3125rem; /* Convert px to rem */
+}
+
+.left {
+    display: flex;
+}
+
+.box3 .contact {
+    position: relative;
+    top: 0.9375rem; /* Convert px to rem */
+    left: 1.0625rem; /* Convert px to rem */
+}
+
+.logitech, .oracle, .intel {
+    height: 5rem; /* Convert px to rem */
+}
+
+.illus {
+    height: 60vh; /* Use vh unit */
+    position: relative;
+    bottom: 10rem;
+}
+
+section h2 {
+    font-size: 4rem;
+    position: relative;
+    left: 4.375rem; /* Convert px to rem */
+}
+
+section p {
+    position: relative;
+    left: 4.375rem; /* Convert px to rem */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+section .boxes {
+    height: 3rem; /* Convert px to rem */
+    width: 11rem; /* Convert px to rem */
+    background-color: lightseagreen;
+    margin-right: 5rem; /* Convert px to rem */
+}
+
+section .box {
+    display: flex;
+    margin-left: 4.0625rem; /* Convert px to rem */
+}
+
+.box a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+section .box1 {
+    position: relative;
+    top: 1.125rem; /* Convert px to rem */
+    left: 1.875rem; /* Convert px to rem */
+    font-weight: 600;
+}
+
+section .box2 {
+    position: relative;
+    top: 1.25rem; /* Convert px to rem */
+}
+
+.box2 a {
+    color: black;
+}
+
+section .left_section {
+    position: relative;
+    float: right;
+    bottom: 43.75vh; /* Use vh unit */
+    right: 18.75vw; /* Use vw unit */
+}
+
+section .bottom {
+    position: relative;
+    top: 3.75rem; /* Convert px to rem */
+}
+
+section .images {
+    position: relative;
+    top: 1.875rem; /* Convert px to rem */
+    left: 4.0625rem; /* Convert px to rem */
+}
+
+@media screen and (max-width: 48rem) { /* Use rem unit for max-width */
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav img {
+        height: 5rem; /* Convert px to rem */
+    }
+    nav .center {
+        margin: 1.125rem 0; /* Convert px to rem */
+    }
+    nav .left {
+        margin: 0.3125rem 0; /* Convert px to rem */
+    }
+    .box3 .contact {
+        top: 0;
+        left: 0;
+    }
+    .logitech, .oracle, .intel {
+        height: 5rem; /* Convert px to rem */
+    }
+    .illus {
+        height: auto;
+    }
+    section h2, section p {
+        left: 0;
+        text-align: center;
+    }
+    section .box {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    section .box1, section .box2 {
+        text-align: center;
+        position: static;
+        top: 0;
+        left: 0;
+    
+
+}
+    section .left_section, section .bottom, section .images {
+        position: static;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+}
